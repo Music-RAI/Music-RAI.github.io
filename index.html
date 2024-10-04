@@ -14,7 +14,7 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body id="top">
-
+	
 		<!-- Header -->
 			<header id="header">
 				<h0><strong>Music<br>RAI</strong></h0><br />
@@ -333,14 +333,22 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
-      <script>
+      <script type="text/javascript">
           var gallery  = $('.gallery');
           gallery.poptrox({
               usePopupNav: true,
               usePopupDefaultStyling: false,
               popupCloserText: "",
           });
+
+
+  if (window.location.pathname === "/call") {
+      window.location.href = "https://music-rai.github.io/call";
+  }
+
       </script>
 
+
+		
 	</body>
 </html>
